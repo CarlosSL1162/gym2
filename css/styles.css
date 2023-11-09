@@ -1,0 +1,353 @@
+                                   /*TIPO DE LETRA*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+                                       /*Menu*/
+.container {
+box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
+box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1) inset,
+0 0 0 1px #ccc;
+border-radius: 5px;
+}
+
+#menu a, button{
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+#menu a{
+    color:black;
+}
+li a.active, li a:hover{
+    background: cyan;
+    transition: .5s;
+}
+                                    /*Carrucel*/
+
+.carousel-inner {
+    max-height:40rem !important;
+}
+
+.col-lg-6 .fs-5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+
+}
+
+
+                                   /*ronni, messi y goku*/
+
+#img-Nosotros{
+    max-height:100rem !important;
+    width:30%;
+}
+
+                                   /*Fotos maquinaria*/
+.body{
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.section{
+    background-color: red;
+}
+.icono-wrap img{
+    border: 10px solid white;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    margin-bottom: 50px;
+}
+.col-lg-6{
+    margin: 250px;
+    flex-grow: 1;
+}
+.row{
+    display: flex;
+}
+.col-lg-6 img{
+    display: block;
+    min-width: 250px;
+    min-height: 250px;
+    aspect-ratio: 16/9;
+    margin: 0 auto;
+    transition: transform 10s ease;
+}
+.card img{
+    width: 40%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease-out;
+
+}
+.imagen-hover {
+    transition: transform 0.3s ease;
+}
+.imagen-hover:hover {
+     transform: scale(2.4);
+}
+
+ .card h3 {
+     font-size: 18px;
+}
+
+.card h3:hover {
+     font-size: 24px;
+}
+
+
+
+                                        /*PARTE DEL MAPA*/
+#local {
+    margin-top:50px;
+    background-color: #f3f3f3;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 300px;
+}
+
+.mapa {
+    width:100%;
+    height:500px;
+}
+
+
+.wrapper-local {
+    width:50%;
+    margin-left:100px;
+    padding-top:150px;
+}
+
+
+                                        /*24 HORAS 100 DE APROBACION COMO MI PRECIDENTE*/
+
+#numeros-local{
+    margin:0 !important;
+    padding:0 !important;
+}
+#numeros-local div {
+    padding: 0 20px 0 0;
+    text-align:left;
+    height:48px;
+}
+
+#numeros-local div:not(:last-child) {
+    border-right: 4px solid #3f3f3f;
+}
+#numeros-local div:not(:first-child) {
+    padding-left:20px;
+}
+
+#numeros-local p{
+    margin:0;
+}
+
+                                        /*CONTACTOS BACKGROUND*/
+
+#bg-contactos{
+    position:relative;
+    top: -130px;
+}
+
+#contacto{
+    background-color: #1b2a4e;
+    min-height:500px;
+    position:relative;
+}
+
+#contenedor-formulario{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius:5px;
+}
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+
+                                        /*FOOTER*/
+
+footer {
+    background: #1b2a4e;
+    min-height: 50px;;
+}
+footer p{
+    color:white;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 30px;
+    padding: 0 30px;
+    color:white;
+}
+
+                                /*MEDIA QUERIES PANTALLA ANCHA*/
+
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
+    }
+
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;
+    }
+
+}
+                                            /*=MEDIA QUERIES */
+
+
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90% !important;
+        margin:auto;
+    }
+
+
+    #img-equipo{
+        max-height:20rem !important;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+
+
+}
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
+
+
+                                   /*   index3 precios */
+
+                                   /* Global styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+                                   /* Pricing cards */
+.card {
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1rem;
+ }
+
+.card-header {
+    background-color: yellowgreen;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-header h4 {
+margin-bottom: 0;
+font-weight: normal;
+}
+
+.card-body {
+    padding: 2.0rem;
+ }
+
+.card-title {
+    font-size: 2.00rem;
+    font-weight: bold;
+    margin-bottom: 0;
+ }
+
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+.btn-outline-primary {
+    color: blue;
+    border-color: red;
+}
+
+.btn-outline-primary:hover {
+      background-color: red;
+      color: red;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.btn-primary:hover {
+   background-color: #0c54bd;
+   color: #fff;
+}
+
+                                   /* Table styles */
+.table {
+margin-bottom: 1rem;
+border: 1px solid #ddd;
+}
+
+.table th,
+.table td {
+padding: 0.5rem;
+border-bottom: 1px solid #ddd;
+}
+
+.table th {
+font-weight: bold;
+}
+
+                                /* Responsive styles */
+@media (min-width: 576px) {
+.row-cols-md-3 {
+column-count: 3;
+}
+}
+
+
